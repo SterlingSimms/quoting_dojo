@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quotes</title>
+    <style>
+        .indent{padding-left: 25px;}
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type ="text/javascript" src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <h1>Here are the awesome quotes!</h1>
+    <% for(var i = 0; i < quotes.length; i++) { %>
+        <p>"<%= quotes[i].quote %>"</p>
+        <p class='indent'>-<%= quotes[i].name %> at <%= quotes[i].createdAt %></p>
+        <hr>
+    <%}%>
+</body>
+</html>
+

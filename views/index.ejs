@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type ="text/javascript" src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <form action='/quotes' method='POST'>
+    Your name: <input type='text' name='name'>
+    Quote: <input type='textarea' name='quote'>
+    <input type='submit' value='Add my quote!'>
+    </form>
+    <a href='/quotes'>Skip to quotes!</a>
+</body>
+</html>
